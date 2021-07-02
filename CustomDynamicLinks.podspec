@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'CustomDynamicLinks'
-  s.version          = '8.3.0'
+  s.version          = '7.3.0'
   s.summary          = 'Firebase Dynamic Links'
 
   s.description      = <<-DESC
@@ -13,7 +13,6 @@ Firebase Dynamic Links are deep links that enhance user experience and increase 
 
   s.source           = {
     :git => '',
-    :tag => 'CocoaPods-' + s.version.to_s
   }
   s.social_media_url = 'https://twitter.com/Firebase'
   s.ios.deployment_target = '10.0'
