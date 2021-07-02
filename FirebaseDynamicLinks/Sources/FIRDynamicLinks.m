@@ -455,6 +455,10 @@ static const NSInteger FIRErrorCodeDurableDeepLinkFailed = -119;
 
 - (BOOL)handleUniversalLink:(NSURL *)universalLinkURL
                  completion:(FIRDynamicLinkUniversalLinkHandler)completion {
+NSString *slashedString = [universalLinkURL.absoluteString stringByReplacingOccurrencesOfString:@"dynamic-alex.info-schizofrenie.ro?link=" 
+      withString:@"dynamic-alex.info-schizofrenie.ro/?link="];
+    NSURL *fixedUniversalLinkURL = [NSURL URLWithString:slashedString];
+
   if ([self matchesShortLinkFormat:universalLinkURL]) {
     __weak __typeof__(self) weakSelf = self;
     [self resolveShortLink:universalLinkURL
