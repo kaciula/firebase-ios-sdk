@@ -12,7 +12,7 @@ Firebase Dynamic Links are deep links that enhance user experience and increase 
   s.authors          = 'Google, Inc.'
 
   s.source           = {
-    :git => 'https://github.com/kaciula/firebase-ios-sdk.git',
+    :git => '',
     :tag => 'CocoaPods-' + s.version.to_s
   }
   s.social_media_url = 'https://twitter.com/Firebase'
